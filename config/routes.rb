@@ -16,6 +16,8 @@ AlphaBlog::Application.routes.draw do
   root :to => 'pages#home'
   get 'pages/about' => 'pages#about'
 
+  resources :articles
+
   # Sample resource route with options:
   #   resources :products do
   #     member do
