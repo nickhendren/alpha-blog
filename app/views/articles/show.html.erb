@@ -8,7 +8,7 @@
   Description: <%= @article.description %>
 </p>
 
+<%= render 'form' %>
+<br>
+<br>
 <%= link_to "Edit this Article", edit_article_path(@article) %>
-<br>
-<br>
-<%= link_to "Back to Articles Listing", articles_path %>
