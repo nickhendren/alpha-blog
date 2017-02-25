@@ -18,6 +18,8 @@ AlphaBlog::Application.routes.draw do
 
   resources :articles
 
+  get 'signup', to: 'users#new'
+  resources :users, except: [:new]
   # Sample resource route with options:
   #   resources :products do
   #     member do
