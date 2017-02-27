@@ -3,7 +3,7 @@ class ArticlesController < ApplicationController
   before_filter :set_article, only: [:edit, :update, :show, :destroy]
 
   def index
-    @articles = Article.all
+    @article = Article.all
   end
 
   def new
