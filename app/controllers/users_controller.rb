@@ -34,7 +34,7 @@ class UsersController < ApplicationController
 
   def show
     @user = User.find(params[:id])
-    @user_articles = @uaer.articles.paginate(page: params[:page], per_page: 1)
+    @user_articles = @user.articles.paginate(page: params[:page], per_page: 1)
   end
 
   private
